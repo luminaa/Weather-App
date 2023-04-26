@@ -5,7 +5,7 @@ const WeatherApp = () => {
   const [location, setLocation] = useState('');
   const [weatherData, setWeatherData] = useState(null);
 
-  const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+  const apiKey = '394f7b5a43b3c28607d826d1ff79c581';
 
   const fetchWeatherData = async () => {
     try {
