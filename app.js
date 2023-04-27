@@ -5,7 +5,8 @@ const WeatherApp = () => {
   const [location, setLocation] = useState('');
   const [weatherData, setWeatherData] = useState(null);
 
-  const apiKey = '394f7b5a43b3c28607d826d1ff79c581';
+  const secrets = require('./secrets.json');
+  const apiKey = secrets.apiKey;
 
   const fetchWeatherData = async () => {
     try {
